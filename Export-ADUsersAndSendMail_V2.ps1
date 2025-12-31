@@ -23,7 +23,7 @@ $body = "Dear Team, Attached the list of AD users of Switzerland."
 $attachmentPath = "C:\Temp\alessandro\AD_Users_Switzerland.csv"
 
 # Get Users from OU
-$ou = "OU=Users,OU=OU_TO_USE,OU=Switzerland,OU=OU_TO_USE,DC=gigroup,DC=local"
+$ou = "OU=Users,OU=OU_TO_USE,OU=Switzerland,OU=OU_TO_USE,DC=DC_TO_USE,DC=local"
 $users = Get-ADUser -Filter * -SearchBase $ou -Properties Name, SamAccountName, LastLogonDate, EmailAddress, Enabled, whenCreated, Title, DirectReports, Manager, MemberOf
 
 # Process each user and include DirectReports, Manager, MemberOf
