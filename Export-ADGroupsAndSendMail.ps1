@@ -7,7 +7,7 @@ $body           = "Dear Team, Attached the list of AD groups of Switzerland."
 $attachmentPath = "C:\Temp\alessandro\AD_Groups_Switzerland.csv"
 
 # Get Groups from OU (adjust OU if needed)
-$ou = "OU=Groups,OU=OU_TO_USE,OU=Switzerland,OU=OUR_TO_USE,DC=gigroup,DC=local"
+$ou = "OU=Groups,OU=OU_TO_USE,OU=Switzerland,OU=OUR_TO_USE,DC=DC_TO_USE,DC=local"
 
 # Fetch groups and select a few basic fields
 $groups = Get-ADGroup -Filter * -SearchBase $ou -Properties *
