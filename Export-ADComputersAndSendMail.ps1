@@ -3,7 +3,7 @@ $smtpServer = "smtp.server.local"
 $from = "email@domain.com"
 $to = "it.email@domain.com"
 $subject = "Weekly Computers Report Switzerland"
-$body = "Dear Team, Attached the list of GiGroup Switzerland Computers and current logged user."
+$body = "Dear Team, Attached the list of Computers and current logged user."
 $attachmentPath = "C:\Temp\alessandro\SCCM_Computers_Switzerland.csv"
 
 
