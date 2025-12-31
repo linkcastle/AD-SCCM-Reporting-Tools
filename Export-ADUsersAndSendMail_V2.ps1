@@ -1,4 +1,20 @@
-﻿# Email Parameters 
+<#
+.SYNOPSIS
+    Exports AD users with hierarchy data (manager, direct reports, groups) and emails a CSV/JSON report.
+.DESCRIPTION
+    Used for weekly audits of Local AD users. Outputs include:
+    - User details (Name, SAM, Email, Title)
+    - Manager and direct reports (for org chart mapping)
+    - Group memberships (for permissions audits)
+    - Last logon date (for stale account detection)
+.NOTES
+    Requires:
+    - ActiveDirectory PowerShell module
+    - SMTP access for email notifications
+#>
+ 
+ 
+ # Email Parameters 
 $smtpServer = "smtp.server.local"
 $from = "email@domain.com"
 $to = "email@domain.com"
